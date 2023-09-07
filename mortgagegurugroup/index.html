@@ -62,7 +62,27 @@
             <div class="col-md-6 col-lg-5">
               <div class="card shadow-lg h-100">
                 <div class="card-body text-center">
-                  <div class="h-100" style="min-height: 500px" data-tf-widget="gjTPeHMU" data-tf-hubspot data-tf-hidden="cima_client_key=texasjumbomortgageguru_mortgagegurugroup" data-tf-on-submit="submit"></div><script src="https://embed.typeform.com/next/embed.js"></script>
+                  <div
+                    class="h-100"
+                    data-tf-widget="gjTPeHMU"
+                    data-tf-hubspot
+                    data-tf-hidden="cima_client_key=texasjumbomortgageguru_mortgagegurugroup,hubspot_utk=xxxxx,hubspot_page_name=xxxxx,hubspot_page_url=xxxxx,utm_source=xxxxx,utm_medium=xxxxx,utm_campaign=xxxxx,utm_term=xxxxx,utm_content=xxxxx"
+                    data-tf-on-submit="submit"
+                    data-tf-hide-headers
+                    data-tf-hide-footer
+                    data-tf-opacity="0"
+                    data-tf-auto-resize="300, 800"
+                    shareGaInstance=""
+                    inlineOnMobile="true"
+                  ></div>
+                  <script src="https://embed.typeform.com/next/embed.js"></script>
+                  <script>
+                    function submit({ formId, responseId }) {
+                      if (__hsUserToken) {
+                        fetch(`https://hbip.austindevs.workers.dev/?pageName=${encodeURIComponent(document.title)}&pageUri=${encodeURIComponent(window.location.href)}&hutk=${encodeURIComponent(__hsUserToken)}`);
+                      }
+                    }
+                  </script>
                 </div>
               </div>
             </div>
@@ -255,12 +275,5 @@ American Financial Network, Inc. is an Equal Housing Lender.
       </section>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-    <script>
-      function submit({ formId, responseId }) {
-        if (__hsUserToken) {
-          fetch(`https://hbip.austindevs.workers.dev/?pageName=${encodeURIComponent(document.title)}&pageUri=${encodeURIComponent(window.location.href)}&hutk=${encodeURIComponent(__hsUserToken)}`);
-        }
-      }
-    </script>
   </body>
 </html>
