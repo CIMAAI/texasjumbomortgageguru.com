@@ -63,7 +63,6 @@
               <div class="card shadow-lg h-100">
                 <div class="card-body text-center">
                   <div
-                    class="h-100"
                     data-tf-widget="gjTPeHMU"
                     data-tf-hubspot
                     data-tf-hidden="cima_client_key=texasjumbomortgageguru_mortgagegurugroup,hubspot_utk=xxxxx,hubspot_page_name=xxxxx,hubspot_page_url=xxxxx,utm_source=xxxxx,utm_medium=xxxxx,utm_campaign=xxxxx,utm_term=xxxxx,utm_content=xxxxx"
@@ -78,9 +77,11 @@
                   <script src="https://embed.typeform.com/next/embed.js"></script>
                   <script>
                     function submit({ formId, responseId }) {
-                      if (__hsUserToken) {
-                        fetch(`https://hbip.austindevs.workers.dev/?pageName=${encodeURIComponent(document.title)}&pageUri=${encodeURIComponent(window.location.href)}&hutk=${encodeURIComponent(__hsUserToken)}`);
-                      }
+                      setTimeout(() => {
+                        if (__hsUserToken) {
+                          fetch(`https://hbip.austindevs.workers.dev/?pageName=${encodeURIComponent(document.title)}&pageUri=${encodeURIComponent(window.location.href)}&hutk=${encodeURIComponent(__hsUserToken)}`);
+                        }
+                      }, 2000);
                     }
                   </script>
                 </div>
