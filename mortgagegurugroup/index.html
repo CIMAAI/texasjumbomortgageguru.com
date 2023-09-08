@@ -77,9 +77,7 @@
                   <script>
                     function submit({ formId, responseId }) {
                       setTimeout(() => {
-                        if (__hsUserToken) {
-                          fetch(`https://hbip.austindevs.workers.dev/?pageName=${encodeURIComponent(document.title)}&pageUri=${encodeURIComponent(window.location.href)}&hutk=${encodeURIComponent(__hsUserToken)}`);
-                        }
+                        fetch(`https://hbip.austindevs.workers.dev/?pageName=${encodeURIComponent(document.title)}&pageUri=${encodeURIComponent(window.location.href)}&hutk=${encodeURIComponent(__hsUserToken || '')}&formId=${encodeURIComponent(formId)}&responseId=${encodeURIComponent(responseId)}`);
                       }, 2000);
                     }
                   </script>
@@ -94,7 +92,7 @@
                   
                     <h6 class="text-center">
                       We are also available anytime at<br/>
-                      <a href="tel:+18886206681">(888) 620-6681</a>
+                      <a href="tel:+18886206681">(862) 066-81</a>
                     </h6>
                   
                   <small class="text-muted fw-lighter">
