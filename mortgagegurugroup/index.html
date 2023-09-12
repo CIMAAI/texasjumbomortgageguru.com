@@ -4,8 +4,8 @@
 <html lang="en">
   <head>
     <meta id="google-analytics" content="">
-    <meta id="google-ads-conversion-id" content="">
-    <meta id="google-ads-conversion-label" content="">
+    <meta id="google-ads-conversion-id" content="11059841138">
+    <meta id="google-ads-conversion-label" content="DpOtCI24kLUYEPKQ35kp">
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
       new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -68,7 +68,7 @@
                   <div
                     data-tf-widget="gjTPeHMU"
                     data-tf-hubspot
-                    data-tf-hidden="cima_client_key=texasjumbomortgageguru_mortgagegurugroup,hubspot_utk=xxxxx,hubspot_page_name=xxxxx,hubspot_page_url=xxxxx,utm_source=xxxxx,utm_medium=xxxxx,utm_campaign=xxxxx,utm_term=xxxxx,utm_content=xxxxx"
+                    data-tf-hidden="cima_client_key=texasjumbomortgageguru_mortgagegurugroup,cima_landing_url=https%3A%2F%2Ftexasjumbomortgageguru.com%2Fmortgagegurugroup%2F,hubspot_utk=xxxxx,hubspot_page_name=xxxxx,hubspot_page_url=xxxxx,utm_source=xxxxx,utm_medium=xxxxx,utm_campaign=xxxxx,utm_term=xxxxx,utm_content=xxxxx"
                     data-tf-on-submit="submit"
                     data-tf-hide-headers
                     data-tf-hide-footer
@@ -80,6 +80,7 @@
                   <script src="https://embed.typeform.com/next/embed.js"></script>
                   <script>
                     function submit({ formId, responseId }) {
+                      window.dataLayer && dataLayer.push({'event': 'typeform-submission'});
                       setTimeout(() => {
                         fetch(`https://hbip.austindevs.workers.dev/?pageName=${encodeURIComponent(document.title)}&pageUri=${encodeURIComponent(window.location.href)}&hutk=${encodeURIComponent(window.__hsUserToken || '')}&formId=${encodeURIComponent(formId)}&responseId=${encodeURIComponent(responseId)}`);
                       }, 2000);
